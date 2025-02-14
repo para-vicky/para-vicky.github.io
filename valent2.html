@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <link href="/css/bootstrapcss.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffe6e6; /* Fondo suave */
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .heart {
+            color: red;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-danger fw-bold">💖 Feliz San Valentín 💖</h1>
+        <p class="lead">Un pequeño espacio para recordar lo especial que eres.</p>
+        
+        <div class="card p-4 shadow-sm">
+            <h3 class="heart">🗣️ Unas palabras para ti </h3>
+            <p>Bueno, ehhh… pues es raro, ¿no? ¿Quién diría que terminaría escribiendo esto? XDDD Pero aquí estoy, después de más de un año. Y la verdad, no tuvimos un origen muy convencional… al final, nos conocimos en Omegle. Pensar que ese simple encuentro me llevaría hasta este momento es bastante loco.
+
+                (Ah, por cierto, creo que vi que Omegle volvió con otro nombre XDDD, pero en fin, volviendo al tema...)
+                
+                No soy el mejor con las palabras, jeje, pero quería decirte algo. Aunque nunca está de más repetirlo: eres una persona realmente importante para mí, y valoro muchísimo nuestra amistad. Bueno, a pesar de que vivas en Perú. (Jksjkd, broma, broma.)
+                
+                Supongo que eres de esas personas que aparecen de la nada y hacen todo… ¿más interesante? O al menos, tú eres interesante para mí. Me encanta tu actitud alegre la mayor parte del tiempo, es contagiosa, ¿sabes? Hablar contigo se siente diferente a hablar con otras personas. Incluso con gente que conozco desde hace años, siento que tengo más conexión contigo que con ellos. Supongo que el tiempo es relativo… o al menos eso decía Einstein. Otro fact del día.
+                
+                Ah, y bueno, no solo me has hecho reír a mí, sino también a mi familia. Y a mi gato -- **(que ahora que lo pienso… no sé si hablas conmigo porque sí, o porque en realidad quieres robártelo --… estaré atento.)**
+                
+                La Kity también te manda saludos.   Quiero que sepas que cualquier cosa que necesites yo estare ahi para ti (Asi como cuando suena algo en la noche dksdjssdkj, OOOO cuando haya un raton o una cucaracha(realmente no puedo hacer mucho pero si te ayudo por telepatia ya es algo no? :D)) siempre estare presente y la mayoria de veces disponible, aunq tenga el tiempo contado en el dia, siempre tendre aunque sea un minuto para saludarte y preguntarte como estas...
+                
+                En fin, no quiero alargarme demasiado con esto, luego no me quedara nada mas que decir en tu cumpleaños jdskdsjdskskjsdsjdskdsjk así que solo quiero decir: gracias por ser como eres, Victoria. Espero que sigamos compartiendo momentos, juegos, memes y todas las cosas que nos gustan. <br>
+                
+                Atte. Un Bolichileno que te quiere.</p>
+        </div>
+    
+       <p>
+        <a href="/Sanvalentin.html" class="btn btn-danger my-2">Presionar para una sorpresa</a>
+      </p>
+    </div>
+
+    <script>
+        // Esperar un poco después de cargar la página para activar la animación
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.querySelector(".container").classList.add("visible");
+            }, 300); // Pequeño retraso para hacer la transición más fluida
+        });
+    </script>
+
+    <script src="/js/bootstrapjs.js"></script>
+</body>
+</html>
